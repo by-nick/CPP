@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdlib>
 using namespace std;
 
 int main(){
@@ -15,13 +16,14 @@ int main(){
 	char opc;
 	
 	inicio:
+		system ("cls");
 		
 	cout<<"\nDigite a primeira nota: \n";
 	cin >> n1;
 	cout<< "\nDigite a segunda nota: \n";
 	cin >> n2;
 	
-	nota = n1+n2;
+	nota = (n1+n2)/2;
 	
 	//nota>=60 -> aprovado
 	//nota<60 -> reprovado
